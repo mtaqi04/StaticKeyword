@@ -20,4 +20,12 @@ public class Car {
     public static void printCarCount() {
         System.out.println("Total Cars: " + carCount);
     }
+    public static void resetCarCount(){
+        if(carCount > 10){
+            carCount = 0;
+            System.out.println("Car Count reset was succesfull.");
+        }else{
+            System.out.println("Car Count reset was not successful.");
+        }
+    }
 }
